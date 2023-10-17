@@ -26,9 +26,9 @@ export class FormsComponent {
       hour: '',
       showClosed: true
     })
-    this.unitServices.getAllUnits().subscribe(data => {
-      this.results = data.locations
-      this.filteredResults = data.locations
+    this.unitServices.getAllUnits().subscribe(data=>{
+      this.results = data
+      this.filteredResults = data
     })
   }
 
