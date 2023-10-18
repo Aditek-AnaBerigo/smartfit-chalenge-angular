@@ -37,7 +37,7 @@ export class FormsComponent {
   onSubmit(){
     let{showClosed, hour } = this.formGroup.value
     this.filteredResults = this.filterUnitsService.filter(this.results, showClosed, hour )
-
+    this.unitServices.setFilteredUnits(this.filteredResults)
   }
 
   onClean(){
